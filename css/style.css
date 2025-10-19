@@ -1,0 +1,685 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+:root {
+    --primary-color-text: #9C9999;
+    --primary-color-headlines: #E5CEEA;
+    --primary-color-buttons: #E6F3AD;
+    --primary-color-backround: #faf8f8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--primary-color-backround);
+}
+.container {
+    width: 100%;
+    color: var(--primary-color-text);
+    }
+
+.menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.page-menu {
+    justify-self: end;
+
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 54px;
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid var(--primary-color-headlines);
+    border-radius: 10px;
+    background-color: var(--primary-color-buttons);
+    margin: 15px;
+}
+
+.line {
+    height: 5px;
+    width: 40px;
+    background-color: var(--primary-color-headlines);
+    margin: 6px 0;
+    border-radius: 10px;
+
+}
+
+.profile {
+    text-align: center; 
+}
+.profile-image img {
+    display: inline-block;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.logo-span {
+    display: inline-block;
+    margin: 25px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: var(--primary-color-headlines);
+}
+
+hr {
+    width: 163px;
+    height: 5px;
+    background-color: var(--primary-color-headlines);
+    border-radius: 20px;
+    border: 0px;
+}
+
+.headline h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: var(--primary-color-headlines);
+    margin: 10px;
+
+}
+.frame {
+    width: 100%;
+    text-align: center;
+}
+.frame img {
+    width: 324px;
+    height: 192px;
+    margin: 12px;
+
+}
+
+.my-clients {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.card h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.card span {
+    display: inline-block;
+    background-color: var(--primary-color-headlines);
+    padding: 2px;
+    margin-bottom: 5px;
+  
+}
+
+.card p {
+    margin: 15px;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact button {
+    width: 217px;
+    height: 60px;
+    border: 0px;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: var(--primary-color-buttons);
+    padding: auto;
+    color: var(--primary-color-headlines);
+    margin: 32px;
+    border-radius: 10px;
+
+}
+
+.social-media {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.social-media-icons ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.social-media-icons ul li {
+     display: inline-block;
+     margin: 10px;
+}
+footer {
+    text-align: center;
+    padding-top: 48px;
+}
+
+.menu-list {
+    display: none;
+}
+
+.profile-learn-more {
+    display: none;
+}
+
+.my-works-intro {
+    display: none;
+}
+
+.gallery {
+    display: none;
+}
+
+.contact-form {
+    display: none;
+}
+
+.contact-details {
+    display: none;
+}
+
+#contact-me-headline {
+    display: none;
+}
+
+.contact-intro {
+    display: none;
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        grid-template-columns: 1fr 2fr;
+        align-items: center; 
+    }
+
+    .menu-list {
+        display: block;
+        box-sizing: border-box;
+        padding-right: 24px;
+    }
+
+    .menu-list ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary-color-text)
+
+    }
+    .menu-list ul li {
+        display: inline-block;
+        margin-right: 14px;
+        }
+
+    .menu-list ul li a {
+        text-decoration: none;
+        color: var(--primary-color-text);
+        }
+
+    .profile {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .profile-image img {
+        width: 264px;
+        height: 264px;
+        
+    }
+    .profile-learn-more {
+        display: grid;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .profile-details span {
+        display: block;
+        font-size: 36px;
+        width: 284px;
+        text-align: start;
+        margin-left: 24px;
+        font-weight: 200;
+
+    }
+    .profile-details button {
+        display: block;
+        background-color: var(--primary-color-buttons);
+        color: var(--primary-color-headlines);
+        font-size: 24px;
+        height: 55px;
+        width: 264px;
+        border: none;
+        padding: 14px 20px;
+        margin-left: 24px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    .my-works .frame {
+        display: none;
+    }
+    .headline h3 {
+        padding-left: 24px;
+        text-align: start;
+    }
+
+    hr {
+        margin-left: 24px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 10px;
+        margin-top: 32px;
+        
+    }
+
+    .gallery-item {
+        text-align: center;
+    }
+    .gallery img {
+        width: 400px;
+        height: 237px;
+
+    }
+
+    .my-clients {
+        margin-top: 48px;
+    }
+
+    .my-clients p {
+        width: 345px;
+        margin: 15px auto;
+
+    }
+    .card {
+        margin-top: 48px;
+    }
+    .btn-contact {
+        display: none;
+    }
+
+    .contact-intro {
+        width: 100%;
+        display: block;
+    
+    }
+
+    #contact-me-headline {
+        display: block;
+    }
+
+    .contact-intro p {
+        width: 443px;
+        text-align: start;
+        margin-left: 32px;
+    }
+
+    .contact-form {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .contact-form form {
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: var(--primary-color-buttons);
+    }
+
+    input {
+        height: 34px;
+    }
+
+    .contact-form button {
+        background-color: var(--primary-color-headlines);
+        color: var(--primary-color-backround);
+        text-transform: none;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .contact-details {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-details ul {
+        list-style: none;
+        padding: 0;
+        text-align: start;
+        margin-left: 32px;
+        font-size: 20px;
+        }
+    .social-media-icons ul{
+        text-align: start;
+        margin-left: 24px;
+    }
+    .social-media-icons ul li {
+        margin-right: 12px;
+        
+    }
+    
+}
+
+@media (min-width: 1025px) {
+
+     .hamburger {
+        display: none;
+    }
+
+    .menu {
+        grid-template-columns: 1fr 2fr;
+        align-items: center; 
+    }
+
+    .menu-list {
+        display: block;
+    }
+
+    .menu-list ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary-color-text)
+    }
+
+    .menu-list ul li {
+        display: inline-block;
+        margin-right: 24px;
+        padding: 10px;
+    }
+    .menu-list ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--primary-color-text);
+        transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+        }
+    .menu-list ul li a:hover {
+        transform: scale(1.5);
+        text-shadow: 4px 4px 2px #7a77774b;
+    
+    }
+
+    .profile {
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .profile-image img {
+        width: 500px;
+        height: 500px;
+        
+    }
+    .profile-learn-more {
+        display: grid;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .profile-details {
+        margin-bottom: 64px;
+    }
+
+    .profile-details span {
+        display: block;
+        font-size: 36px;
+        width: 284px;
+        text-align: start;
+        font-weight: 200;
+
+    }
+    .profile-details button {
+        display: block;
+        background-color: var(--primary-color-buttons);
+        color: var(--primary-color-headlines);
+        font-size: 24px;
+        height: 74px;
+        width: 291px;
+        border: none;
+        padding: 14px 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+    
+    .profile-details button:hover {
+    box-shadow: 4px 4px 4px var(--primary-color-headlines);
+    }
+
+
+    hr {
+    width: 318px;
+    height: 10px;
+    margin-left: 32px;
+
+}
+
+.headline h3 {
+    font-size: 40px;
+    text-align: start;
+    margin-left: 32px;
+}
+
+.frame {
+    display: none;
+}
+
+.btn-contact {
+    display: none;
+}
+
+ .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*(3, 1fr*/
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        margin: 32px auto;
+        
+    }
+
+    .gallery-item {
+        text-align: center;
+    }
+    .gallery img {
+        display: inline-block;
+        width: 400px;
+        height: 237px;
+        transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    }
+
+    .gallery-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px #7a7777ad;
+}
+
+    .my-works-intro p {
+        width: 923px;
+        margin-left: 32px;
+    }
+
+    .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 95%;
+    margin: 48px auto;
+    border: 2px solid #7777771e;
+    padding: 32px;
+}
+
+.card h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.card span {
+    display: inline-block;
+    background-color: var(--primary-color-headlines);
+    padding: 2px;
+    margin-bottom: 5px;
+  
+}
+
+.card p {
+    margin: 0%;
+}
+
+.card-image img {
+    width: 170px;
+}
+.card-text-content {
+    text-align: start;
+    box-sizing: border-box;
+    padding-right: 64px;
+}
+
+.role-description {
+    display: inline-block;
+    margin: 24px 0px;
+    margin-right: 16px;
+}
+
+.get-in-touch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+.contact-form {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    }
+
+    .contact-form form {
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    input, textarea {
+        width: 100%;
+        background-color: var(--primary-color-buttons);
+        border: none;
+    }
+
+    input {
+        height: 34px;
+        margin-bottom: 24px;
+    }
+
+        input:focus, textarea:focus {
+        outline: none;
+        box-sizing: border-box;
+        border-top: 2px solid var(--primary-color-headlines);
+        border-left: 2px solid var(--primary-color-headlines);
+    }
+
+
+    .contact-form button {
+        background-color: var(--primary-color-headlines);
+        color: var(--primary-color-backround);
+        text-transform: none;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .social-media {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    .social-media h3 {
+        margin-left: 0;
+        
+    }
+
+    .contact-details {
+        display: block;
+        font-size: 24px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+        
+    }
+
+    .contact-details ul {
+        list-style: none;
+        padding: 0;
+
+    }
+    .contact-details ul li {
+        margin-bottom: 24px;
+    }
+    
+    .social-media-icons ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .social-media-icons ul  li {
+        display: inline-block;
+        margin: 0;
+
+    }
+
+    #contact-me-headline {
+        display: block;
+    }
+
+    .contact-intro {
+        display: block;
+        width: 814px;
+        text-align: start;
+        margin-left: 32px;
+    }
+
+    .contact-intro p {
+        
+    }
+
+
+
+}
+
