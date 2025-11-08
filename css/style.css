@@ -15,6 +15,10 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: var(--primary-color-backround);
 }
+
+html, body {
+    overflow-x: hidden;
+}
 .container {
     width: 100%;
     color: var(--primary-color-text);
@@ -52,6 +56,43 @@ body {
     margin: 6px 0;
     border-radius: 10px;
 
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-panel {
+    position: fixed;
+    right: -225px;
+    top: 0;
+    width: 225px;
+    height: 325px;
+    background-color: var(--primary-color-buttons);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right 1s ease-in-out;
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-panel ul li {
+    margin-bottom: 32px;
+}
+
+.menu-panel ul li a {
+    color: var(--primary-color-text);
+    text-decoration: none;
+}
+
+.menu-panel.active {
+    right: 0;
 }
 
 .profile {
@@ -217,6 +258,10 @@ footer {
         align-items: center; 
     }
 
+    .menu-panel {
+        display: none;
+    }
+
     .menu-list {
         display: block;
         box-sizing: border-box;
@@ -224,6 +269,8 @@ footer {
     }
 
     .menu-list ul {
+        justify-content: flex-end;
+        display: flex;
         list-style: none;
         padding: 0;
         text-transform: uppercase;
@@ -400,11 +447,16 @@ footer {
         display: none;
     }
 
+    .menu-panel {
+        display: none;
+    }
+
     .menu {
         grid-template-columns: 1fr 2fr;
         align-items: center; 
     }
 
+    
     .menu-list {
         display: block;
     }
