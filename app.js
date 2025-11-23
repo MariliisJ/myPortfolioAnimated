@@ -15,7 +15,7 @@ let currentImageIndex = 0;
 frameImage.addEventListener('click', ()=> {
     currentImageIndex++; //+1
 
-    if(currentImageIndex >= 5) {
+    if(currentImageIndex >= 6) {
         currentImageIndex = 0;
     }
     
